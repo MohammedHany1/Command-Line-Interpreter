@@ -26,15 +26,21 @@ public class Terminal {
                     switch (parser.getCommand()){
                         case "echo":
                             cmd.echo(parser.getArgument());
+                            break;
                         case "pwd":
                             cmd.pwd();
+                            break;
                         default:
                             System.out.println("Error Wrong Command!");
+                            break;
                     }
+                    break;
                 case 2:
                     System.exit(0);
+                    break;
                 default:
                     System.out.println("Error Wrong Choice!");
+                    break;
             }
         }
     }
